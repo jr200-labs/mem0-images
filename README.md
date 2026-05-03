@@ -8,18 +8,18 @@ This repository isolates image build and release automation from deployment repo
 
 | Image | Dockerfile | Purpose |
 |---|---|---|
-| `mem0-dashboard` | `images/mem0-dashboard/Dockerfile` | Mem0 Next.js dashboard UI |
-| `mem0-api-server` | `images/mem0-api-server/Dockerfile` | Mem0 FastAPI self-hosted server |
+| `mem0-dashboard` | upstream `server/dashboard/Dockerfile` | Mem0 Next.js dashboard UI |
+| `mem0-api-server` | upstream `server/Dockerfile` | Mem0 FastAPI self-hosted server |
 
 ## Source of truth
 
 - Upstream project: `mem0ai/mem0`
 - Server path: `server`
 - Dashboard path: `server/dashboard`
-- Pinned upstream tag: `ARG MEM0_VERSION` in each image Dockerfile (currently `v2.0.1`)
+- Pinned upstream tag: `.github/images.yaml` git context tag (currently `v2.0.1`)
 
-Each Docker build downloads the upstream source archive for that tag and builds from
-the corresponding path.
+Each Docker build uses upstream Git context directly so the Dockerfiles stay identical
+to official Mem0 sources at the pinned tag.
 
 ## Workflow model
 
@@ -43,9 +43,8 @@ Release flow:
 
 ## Renovate
 
-`renovate.json` includes a regex manager that tracks:
-
-- `ARG MEM0_VERSION=...` in both image Dockerfiles
+`renovate.json` includes a regex manager that tracks the pinned upstream mem0 tag in
+`.github/images.yaml`.
 
 Datasource: `github-tags` for `mem0ai/mem0`.
 
