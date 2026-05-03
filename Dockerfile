@@ -1,10 +1,10 @@
 FROM alpine:3.20 AS fetch
-ARG MEM0_REF=6d3486ca5671f431b00450ab191e7380901b55b8
+ARG MEM0_VERSION=v2.0.1
 RUN apk add --no-cache curl tar
 WORKDIR /src
-RUN curl -fsSL "https://github.com/mem0ai/mem0/archive/${MEM0_REF}.tar.gz" -o mem0.tar.gz && \
+RUN curl -fsSL "https://github.com/mem0ai/mem0/archive/${MEM0_VERSION}.tar.gz" -o mem0.tar.gz && \
     tar -xzf mem0.tar.gz && \
-    mv "mem0-${MEM0_REF}/server/dashboard" ./dashboard
+    mv "mem0-${MEM0_VERSION#v}/server/dashboard" ./dashboard
 
 FROM node:20-alpine AS base
 RUN apk add --no-cache libc6-compat
