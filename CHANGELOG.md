@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/jr200-labs/mem0-images/compare/v0.1.4...v0.1.5) (2026-05-03)
+
+
+### Bug Fixes
+
+* **mem0-api-server:** build from upstream named context with libpq ([#16](https://github.com/jr200-labs/mem0-images/issues/16)) ([c21d660](https://github.com/jr200-labs/mem0-images/commit/c21d66000ee336ebfd13dfbf8b5de23337d476a4))
+
 ## [0.1.4](https://github.com/jr200-labs/mem0-images/compare/v0.1.3...v0.1.4) (2026-05-03)
 
 
