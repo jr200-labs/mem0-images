@@ -1,5 +1,0 @@
-# See jr200-labs/github-action-templates/AGENTS.md for catalogue.
-workflows:
-  - hygiene
-  - docker
-  - release
