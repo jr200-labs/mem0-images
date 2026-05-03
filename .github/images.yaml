@@ -1,7 +1,7 @@
 images:
   - name: mem0-dashboard
-    dockerfile: images/mem0-dashboard/Dockerfile
-    context: images/mem0-dashboard
+    dockerfile: Dockerfile
+    context: https://github.com/mem0ai/mem0.git#bd9d27ff509f6259c3bfd1915ca4c975db798c8a:server/dashboard
   - name: mem0-api-server
-    dockerfile: images/mem0-api-server/Dockerfile
-    context: images/mem0-api-server
+    dockerfile: Dockerfile
+    context: https://github.com/mem0ai/mem0.git#bd9d27ff509f6259c3bfd1915ca4c975db798c8a:server
