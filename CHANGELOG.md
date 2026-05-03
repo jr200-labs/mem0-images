@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/jr200-labs/mem0-images/compare/v0.1.3...v0.1.4) (2026-05-03)
+
+
+### Bug Fixes
+
+* **mem0-api-server:** add libpq runtime for psycopg ([#14](https://github.com/jr200-labs/mem0-images/issues/14)) ([d2d506b](https://github.com/jr200-labs/mem0-images/commit/d2d506bf8eb78f6cc7632839a2cdd445ee258ed1))
+
 ## [0.1.3](https://github.com/jr200-labs/mem0-images/compare/v0.1.2...v0.1.3) (2026-05-03)
 
 
