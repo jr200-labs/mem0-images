@@ -1,0 +1,4 @@
+images:
+  - name: mem0-dashboard
+    dockerfile: Dockerfile
+    context: .
