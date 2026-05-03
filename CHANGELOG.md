@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/jr200-labs/mem0-images/compare/v0.1.1...v0.1.2) (2026-05-03)
+
+
+### Features
+
+* publish mem0 dashboard and api server images ([#7](https://github.com/jr200-labs/mem0-images/issues/7)) ([3fdd7b2](https://github.com/jr200-labs/mem0-images/commit/3fdd7b22ff1a2088f6e5aa6dc563ec747b704e7f))
+
 ## [0.1.1](https://github.com/jr200-labs/mem0-dashboard/compare/v0.1.0...v0.1.1) (2026-05-03)
 
 
