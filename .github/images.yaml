@@ -1,4 +1,7 @@
 images:
   - name: mem0-dashboard
-    dockerfile: Dockerfile
-    context: .
+    dockerfile: images/mem0-dashboard/Dockerfile
+    context: images/mem0-dashboard
+  - name: mem0-api-server
+    dockerfile: images/mem0-api-server/Dockerfile
+    context: images/mem0-api-server
