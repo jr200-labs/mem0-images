@@ -3,12 +3,9 @@
   "extends": ["github>jr200-labs/github-action-templates"],
   "regexManagers": [
     {
-      "fileMatch": [
-        "^images/mem0-dashboard/Dockerfile$",
-        "^images/mem0-api-server/Dockerfile$"
-      ],
+      "fileMatch": ["^\\.github/images\\.yaml$"],
       "matchStrings": [
-        "ARG MEM0_VERSION=(?<currentValue>[^\\s]+)"
+        "context: https://github\\.com/mem0ai/mem0\\.git#(?<currentValue>v[^:]+):server(?:/dashboard)?"
       ],
       "depNameTemplate": "mem0ai/mem0",
       "datasourceTemplate": "github-tags",
