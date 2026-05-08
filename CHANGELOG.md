@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/jr200-labs/mem0-images/compare/v0.1.5...v0.1.6) (2026-05-08)
+
+
+### Bug Fixes
+
+* **deps:** update python docker tag to v3.14 ([#18](https://github.com/jr200-labs/mem0-images/issues/18)) ([b3a11d4](https://github.com/jr200-labs/mem0-images/commit/b3a11d44c098c335d7ea17bc377ed883cece0fa1))
+
 ## [0.1.5](https://github.com/jr200-labs/mem0-images/compare/v0.1.4...v0.1.5) (2026-05-03)
 
 
